@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio3</title>
+  </head>
+  <body>
+    <form>
+      <label for="color">Color:</label>
+      <input type="color" name="color" id="color" /> <br /><br />
+      <label for="date">Fecha:</label>
+      <input type="date" name="date" id="date" /> <br /><br />
+      <label for="datetime">Hora:</label>
+      <input type="datetime" name="datetime" id="datetime" /> <br /><br />
+      <label for="datetime-local">Hora y fecha:</label>
+      <input type="datetime-local" name="datetime-local" id="datetime-local" />
+      <br /><br />
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        minlength="13"
+        maxlength="30"
+      />
+      <br /><br />
+      <label for="month">Mes y año:</label>
+      <input type="month" name="month" id="month" /> <br /><br />
+      <label for="nummber">Números:</label>
+      <input type="number" name="number" id="number" /> <br /><br />
+      <label for="range">Rango:</label>
+      <input type="range" name="range" id="range" /> <br /><br />
+      <label for="search">Búsqueda:</label>
+      <input type="search" name="search" id="search" /> <br /><br />
+      <label for="tel">Teléfono:</label>
+      <input type="tel" name="tel" id="tel" /> <br /><br />
+      <label for="time">Tiempo:</label>
+      <input type="time" name="time" id="time" /> <br /><br />
+      <label for="url">Url:</label>
+      <input type="url" name="url" id="url" /> <br /><br />
+      <label for="week">Semana:</label>
+      <input type="week" name="week" id="week" /> <br /><br />
+      Casilla de verificación: <input type="checkbox" /> <br /><br />
+      Casilla de selección: <input type="radio" /> <br /><br />
+      Nombre:<input type="text" /> <br /><br />
+
+      <label for="datalist">Provincia:</label>
+      <input id="form-person-title" type="text" list="mylist" />
+
+      <datalist id="mylist" label="datalist">
+        <option label="Madrid" value="Madrid"></option>
+        <option label="Valencia" value="Valencia"></option>
+        <option label="Euskadi" value="Euskadi"></option>
+        <option label="Galicia" value="Galicia"></option>
+        <option label="Santander" value="Santander"></option>
+        <option label="León" value="León"></option>
+        <option label="Murcia" value="Murcia"></option>
+        <option label="Huelva" value="Huelva"></option>
+        <option label="Sevilla" value="sevilla"></option>
+        <option label="Málaga" value="Málaga"></option>
+        <option label="Cáceres" value="Cáceres"></option>
+        <option label="Badajoz" value="Badajoz"></option>
+        <option label="Jaén" value="Jaén"></option>
+        <option label="Granada" value="Granada"></option>
+        <option label="Cádiz" value="Cádiz"></option>
+        <option label="Almería" value="Almería"></option>
+        <option label="Albacete" value="Albacete"></option>
+        <option label="Ciudad Real" value="Ciudad Real"></option>
+        <option label="Toledo" value="Toledo"></option>
+        <option label="Cuenca" value="Cuenca"></option>
+        <br />
+        <br /></datalist
+      ><br /><br />
+
+      <label for="textarea">Textarea:</label>
+      <textarea label="textarea" name="mensaje"> </textarea> <br /><br />
+      <label for="text">Caja de texto:</label>
+      <input
+        type="text"
+        label="text"
+        placeholder="texto"
+        autofocus="autofocus"
+        required
+        autocomplete="on"
+      />
+      <br /><br />
+
+      <label for="textarea2">Introduzca un número del 1 al 10:</label>
+      <input
+        type="number"
+        label="textarea2"
+        min="0"
+        max="10"
+        step="1"
+        id="textarea2"
+        placeholder="Número"
+        required
+      />
+      <br /><br />
+
+      <label for="file">Seleccione un archivo:</label>
+      <input type="file" label="file" /> <br /><br />
+
+      <label for="password">Introduzca una contraseña:</label>
+      <input
+        type="password"
+        label="password"
+        id="password"
+        pattern="[0-9]{1}-[a-z]{30}-[A-Z]{1}"
+        minlength="8"
+        required
+      />
+      <br /><br />
+
+      <label for="progress">Progreso:</label>
+      <progress label="progress" min="0" max="100" value="75">
+        este es un elemento de progreso no soportado por tu navegador, prueba
+        con otro</progress
+      ><br /><br />
+
+      Botón de envío: <input type="submit" />
+    </form>
+  </body>
+</html>
